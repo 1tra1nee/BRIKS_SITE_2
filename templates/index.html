@@ -1,0 +1,220 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Психология</title>
+     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+      body {
+            background-color: rgb(241, 204, 91); /* Бледно-зеленый фон1 */
+        }
+     </style>
+    <script src="{% static '/scripts/typed.min.js' %}"></script>
+    <script src="{% static '/scripts/typing_script.js' %}"></script>
+
+    <script
+      src="{% static '/node_modules/@dotlottie/player-component/dist/dotlottie-player.mjs' %}"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="https://vk.com/psyhologiaa" class="header-logo">
+        <img class="header-logo-image" src="{% static '/images/logo.png' %}" alt="PSY" width="40" height="40" loading="lazy"/>
+      </a>
+
+   <script src="{% static '/scripts/nav.js' %}"></script>
+   <script>nav_main("main");</script>
+
+      <a href="loginMe" class="btn btn-primary"> Вход | Регистрация </a>
+
+      <div class="lang-contant parent-element">
+      </div>
+    </header>
+    <div class="content-first">
+      <h1 class="custom-font">Психология и ее направления:</h1>
+      <p class="dynamic-text"><span class="typed"></span></p>
+      <script src="{% static '/scripts/typing_script.js' %}"></script>
+     <p class="dop-info">Этот сайт станет твоим гидом в мире психологии</p>
+      <div class="contact-container_big">
+        <div class="contact-container_smal">
+            <img src="{% static '/images/icons/you.png' %}" alt="Позновательная минутка на YouTobe" >
+            <a href="https://www.youtube.com/watch?v=j0iHG1qJjzA" class="text-contact">10 причин почему психология нужна всем</a>
+        </div>
+      </div>
+    </div>
+    <div class="page-second">
+      <div class="content-second">
+        <p1 class="headline">Психология — это:</p1>
+        <div class="flex-container">
+          <a href="#partners" class="flex-element parent-element">
+            <dotlottie-player
+              class="flex-logo-image flex-element0"
+              src="{% static '/icon-json/advantage_1.json' %}"
+              background="transparent"
+              speed="1"
+              direction="1"
+              playMode="normal"
+            ></dotlottie-player>
+            <p class="flex-title">Основоположенники психоанализа</p>
+            <p class="flex-info">Первооткрыватили данного направления.</p>
+          </a>
+          <a href="/disciplines" class="flex-element parent-element">
+            <dotlottie-player
+              class="flex-logo-image flex-element1"
+              src="{% static '/icon-json/advantage_2.json' %}"
+              background="transparent"
+              speed="1"
+              direction="1"
+              playMode="normal"
+            ></dotlottie-player>
+            <p class="flex-title">Различные методики</p>
+            <p class="flex-info">
+              Получишь прикладные и фундаментальные знания психотерапии.
+            </p>
+          </a>
+          <a href="/teachers" class="flex-element parent-element">
+            <dotlottie-player
+              class="flex-logo-image flex-element2"
+              src="{% static '/icon-json/advantage_3.json' %}"
+              background="transparent"
+              speed="1.3"
+              direction="1"
+              playMode="normal"
+            ></dotlottie-player>
+            <p class="flex-title">Специалисты</p>
+            <p class="flex-info">У нас в составе есть дотора и кандидаты психологических наук.</p>
+          </a>
+          <a href="https://vuc-mai.ru" class="flex-element parent-element">
+            <dotlottie-player
+              class="flex-logo-image-bottom flex-element3"
+              src="{% static '/icon-json/advantage_4.json' %}"
+              background="transparent"
+              speed="1"
+              direction="1"
+              playMode="normal"
+            ></dotlottie-player>
+            <p class="flex-title">Болевые точки</p>
+            <p class="flex-info">Сможем найти и устранить любые ваши проблемы.</p>
+          </a>
+          <a href="https://files.mai.ru/site/sveden/oop3/Annotations_З_2019-20_09.03.03.Б3_МАИ_311.pdf" class="flex-element parent-element">
+            <dotlottie-player
+              class="flex-logo-image-bottom flex-element4"
+              src="{% static '/icon-json/advantage_5.json' %}"
+              background="transparent"
+              speed="1"
+              direction="1"
+              playMode="normal"
+            ></dotlottie-player>
+            <p class="flex-title">Продуманный план</p>
+            <p class="flex-info">Поможем решить все ваши проблемы.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="content_section content_section__course">
+      <h1>Групповая терапия</h1>
+      <div class="course_block">
+        <div class="course_block__left_side">
+          <div class="course_block__course_number">Старт нового потока: 09.06.24</div>
+          <div class="left_side__text_block">
+            <h2>Группа по методике логотерапии</h2>
+            <ul>
+              <li>Количество мест в группе: <b>45</b></li>
+              <li>Количество занятых мест: <b>15</b></li>
+              <li>Цена одного сеанса: <b>2000 руб.</b></li>
+              <li>Цена всего курса: <b>25000 руб.</b></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="course_block__right_side course_block__right_side-animation"
+        >
+          <div class="right_side__text_block">
+            <h2>Люди прошедшие наши курс</h2>
+          </div>
+          <div class="right_side__graph">
+            <div class="graph__column">
+              <div class="graph__column___box graph__column___animation260">
+                2600
+              </div>
+              <p>2021</p>
+            </div>
+            <div class="graph__column">
+              <div class="graph__column___box graph__column___animation244">
+                2440
+              </div>
+              <p>2022</p>
+            </div>
+            <div class="graph__column">
+              <div class="graph__column___box graph__column___animation251">
+                2517
+              </div>
+              <p>2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="black-container">
+      <p class="prof-header">Будущие группы, по следующим программам:</p>
+      <div class="prof-containers" id="VerticalContainers">
+          <div class="prof-container prof0" >
+            <p class="prof-title">Телесно-ориентированная терапия</p>
+            <p class="prof-info">Телесно-ориентированная терапия — воздействие на душу через тело. Она направлена на устранение ненужных напряжений, зажимов и на обучение человека быть более расслабленным, отучить его от дурных привычек и вернуться к естественной природной мудрости. Тело — это дом души, и очень важно, чтобы это дом был уютным. Жизненные трудности не исчезают бесследно, а остаются в теле в виде мышечных зажимов, и если зажимов становится слишком много, жизненная радость сменяется чем-то более серым. Телесно-ориентированные тренинги возвращают телу расслабление и чуткость.</p>
+          </div>
+          <div class="prof-container prof1">
+            <p class="prof-title">Психодрама</p>
+            <p class="prof-info">Психодрама (греч. drama — действие) — метод групповой работы, разработанный Я. Морено, в котором пациенты попеременно выступают в качестве зрителей и актеров, при чем их роли направлены на моделирование жизненных ситуаций, имеющих личностный смысл для участников, с целью понимания и устранения неадекватных эмоциональных реакций, более глубокого самопознания, отработки социальной перцепции. Для психодрамы важны спонтанность, активность, импровизационность поведения. Психодрама применяется при неврозах, в том числе детского возраста, при алкоголизме и психосоматических заболеваниях, при обострении психопатий и отклоняющемся поведении подростков. Элементы психодрамы входят в поведенческую психотерапию, деловые игры, социально-психологический тренинг.</p>
+          </div>
+          <div class="prof-container prof2">
+            <p class="prof-title">Позитивная психотерапия</p>
+            <p class="prof-info">Позитивная психотерапия — интересное направление в психологии. Основоположником позитивной терапии считают немецкого психолога, психотерапевта Носсрата Пезешкиана. Название метода происходит от латинского слова «positum», что означает: фактическое, данное, имеющееся в наличии. Краткосрочность, простота языка, системный подход являются безусловными достоинствами данного направления.</p>
+          </div>
+          <div class="prof-container prof3">
+            <p class="prof-title">НЛП</p>
+            <p class="prof-info">НЛП (Нейролингвистическое программирование) — применяется в различных областях: психотерапии, спорте, рекламе, коучинге, личностном росте, продажах и т. д. Задача НЛП — реальные личностные изменения. НЛП — это сумма технологий, позволяющая человеку действовать более эффективно в проблемных для него ситуациях. Положительный результат достигается путем овладевания клиентом расширенного выбора ответных поведенческих реакций</p>
+          </div>
+          <div class="empty"></div>
+
+      </div>
+    </div>
+    <p id="partners" class="title-partner">Основатели</p>
+    <div class="partner-container">
+      <a href="https://ru.wikipedia.org/wiki/%D0%AE%D0%BD%D0%B3,_%D0%9A%D0%B0%D1%80%D0%BB_%D0%93%D1%83%D1%81%D1%82%D0%B0%D0%B2" class="partner_button" target="_blank"><img src="{% static '/images/icons/UNG.jpg' %}" alt="Юнг"></a>
+      <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B8%D1%82%D0%B5%D1%80%D1%81%D0%BE%D0%BD,_%D0%94%D0%B6%D0%BE%D1%80%D0%B4%D0%B0%D0%BD" class="partner_button" target="_blank"><img src="{% static '/images/pit.jpg' %}" alt="Питерсон"></a>
+      <a href="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B5%D0%B9%D0%B4,_%D0%97%D0%B8%D0%B3%D0%BC%D1%83%D0%BD%D0%B4" class="partner_button" target="_blank"><img src="{% static '/images/fr.jpg' %}" alt="Фрейд"></a>
+      <a href="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%BB,_%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80" class="partner_button" target="_blank"><img src="{% static '/images/vik.jpg' %}" alt="Франкл"></a>
+    </div>
+
+    <center><div class="create-line">
+    </div></center>
+
+    <div class="contact-container_big">
+        <div class="contact-container_smal">
+            <img src="{% static '/images/icons/vk.png' %}" alt="Вконтакте" >
+            <a href="https://vk.com/psyhologiaa" class="text-contact">Вконтакте</a>
+        </div>
+
+        <div class="contact-container_smal">
+            <img src="{% static '/images/icons/at.png' %}" alt="Собака">
+            <a href="mailto:kaf311@yandex.ru" class="text-contact">psyhologiaa@yandex.ru</a>
+        </div>
+
+        <div class="contact-container_smal">
+            <img src="{% static '/images/icons/phone-call.png' %}" alt="Картинка 3">
+            <a href="tel:+74951584647" class="text-contact">+7(777)666-13-13</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{% static '/scripts/scroll.js' %}"></script>
+    <script type="text/javascript" src="{% static '/scripts/animation.js' %}"></script>
+    <script type="text/javascript" src="{% static '/scripts/buttons_scripts.js' %}"></script>
+  </body>
+</html>

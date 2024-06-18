@@ -1,0 +1,117 @@
+.container {
+    margin-inline: .8vw;
+    margin-top: 11vh;
+    margin-bottom: 2vw;
+    padding-inline: 2vw;
+    padding-top: .01vh;
+    padding-bottom: 15vh;
+    background-color: var(--color-light-blue);
+    border-radius: 6vw;
+}
+
+.title {
+    font-size: 3vw;
+    margin-bottom: 7vh;
+    color: var(--color-light);
+    font-weight: 800;
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 2.5vw;
+}
+
+.discipline {
+    padding: 1vw;
+    border-radius: 2.5vw;
+    background-color: var(--color-light-gray);
+}
+
+.type-discipline {
+    font-size: 1.65vw;
+    font-weight: 600;
+    background-color: rgba(172, 172, 172, 0.3);
+    border-radius: 1.2vw;
+    padding: .7vw;
+    color: var(--color-for-border)
+}
+
+.elements_discipline {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: .3vw;
+}
+
+.element-discipline {
+    font-size: 1.2vw;
+    margin-block: 0;
+    background-color: rgba(172, 172, 172, 0.099);
+    border-radius: 1.2vw;
+    padding: 1.1vw;
+    font-weight: 600;
+    color: var(--color-for-border)
+}
+
+
+.grad0 {
+    background: linear-gradient(to top, #062966, #698284)
+}
+
+.grad1 {
+    background: linear-gradient(to bottom, #278251, #3c2b77)
+}
+
+.grad2 {
+    background: linear-gradient(to bottom, #2e4d04, #264c76)
+}
+
+.grad3 {
+    background: linear-gradient(to top, #31286d, #224e63)
+}
+
+@media (max-width: 920px) {
+    .header-menu {
+        column-gap: 1.2vw;
+    }
+
+
+    .lang-title {
+        font-size: 1.5vw;
+    }
+
+    .title {
+        font-size: 6vw;
+    }
+
+    .content {
+        grid-template-columns: minmax(200px, 1fr);
+
+        gap: 2.5vw;
+    }
+
+    .type-discipline {
+        font-size: 3.3vw;
+    }
+
+    .element-discipline {
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding-top: 5.5vw;
+        position: static;
+        gap: 0;
+    }
+   
+}
+
+@media (max-width: 450px) {
+    .elements_discipline {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+
+}

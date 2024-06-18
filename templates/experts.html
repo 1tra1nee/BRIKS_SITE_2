@@ -1,0 +1,163 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преподаватели</title>
+    <link rel="stylesheet" href="{% static 'css/teachers.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            background-color: rgb(241, 204, 91);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="https://mai.ru" class="header-logo">
+          <img
+            class="header-logo-image"
+            src="{% static '/images/logo.png' %}"
+            alt=""
+            width="40"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+
+   <script src="{% static '/scripts/nav.js' %}"></script>
+   <script>nav_main("teachers");</script>
+
+        <div class="lang-contant parent-element">
+        </div>
+    </header>
+      <div class="teachers">
+        <div class="container_teacher">
+            <div class="photos_teachers">
+                <img src="{% static '/images/pit.jpg' %}">
+            </div>
+            <div class="info_block">
+                <div class="main_info">
+                    <h1>Джо́рдан Бернт Пи́терсон</h1>
+                    <p>Университет Альберты<br>Докторская степень в области клинической психологии</p>
+                </div>
+                <div class="sub_info">
+                    <h1>Направления работы:</h1>
+                    <div class="grid">
+                        <div class="grid_element">
+                            <p>Когнитивная психология</p>
+                        </div>
+                        <div class="grid_element">
+                            <p>Нейропсихология</p>
+                        </div>
+                        <div class="grid_element">
+                            <p>Позитивная психотерапия</p>
+                        </div>
+                        <div class="grid_element">
+                            <p>Психодрама</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_teacher">
+            <div class="photos_teachers">
+                <img src="{% static '/images/UNG.png' %}">
+            </div>
+            <div class="info_block">
+                <div class="main_info">
+                    <h1>Карл Густав Юнг</h1>
+                    <p>Базельский университет<br>Доктор</p>
+                </div>
+                <div class="sub_info">
+                    <h1>Направления работы:</h1>
+                    <div class="grid">
+                        <div class="grid_element">
+                            <p>Клиент-центрированная психотерапия</p>
+                        </div>
+                        <div class="grid_element">
+                            <p>Нейропсихология</p>
+                        </div>
+                        <div class="grid_element">
+                            <p>Позитивная психотерапия</p>
+                        </div>
+                        <div class="grid_element">
+                            <p>Психодрама</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_teacher">
+            <div class="photos_teachers">
+                <img src="{% static '/images/fr.jpg' %}">
+            </div>
+            <div class="info_block">
+                <div class="main_info">
+                    <h1>Фрейд Зигмунд</h1>
+                    <p>Венском университет<br>Кандидат в доктора по неврологии</p>
+                </div>
+                <div class="sub_info">
+                    <h1>Направления работы:</h1>
+                    <div class="grid">
+                            <div class="grid_element">
+                                <p>Дифференциальная психология</p>
+                            </div>
+                            <div class="grid_element">
+                                <p>Гуманистическая психология</p>
+                            </div>
+                            <div class="grid_element">
+                                <p>Гештальт-терапия</p>
+                            </div>
+                            <div class="grid_element">
+                                <p>Бихевиоризм</p>
+                            </div>
+                            <div class="grid_element">
+                                <p>Когнитивная психология</p>
+                            </div>
+                            <div class="grid_element">
+                                <p>Коучинг</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_teacher">
+            <div class="photos_teachers">
+                <img src="{% static '/images/vik.jpg' %}">
+            </div>
+            <div class="info_block">
+                <div class="main_info">
+                    <h1>Виктор Франкл</h1>
+                    <p>Доцент <br>Психотерапевт</p>
+                </div>
+                <div class="sub_info">
+                    <h1>Направления работы:</h1>
+                    <div class="grid">
+                        <div class="grid_element">
+                            <p>Когнитивная психология</p>
+                        </div>
+                        <div class="grid_element">
+                            <p>Нейропсихология</p>
+                        </div>
+                        <div class="grid_element">
+                            <p>Позитивная психотерапия</p>
+                        </div>
+                        <div class="grid_element">
+                            <p>Психодрама</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</body>
+</html>

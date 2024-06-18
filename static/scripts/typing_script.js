@@ -1,0 +1,31 @@
+var typed = new Typed('.typed', {
+  strings: [
+    '<span class="grad0">Арт-терапия</span>',
+    '<span class="grad1">Бихевиоризм</span>',
+    '<span class="grad2">Гендерная</span>',
+    '<span class="grad3">Гештальт-терапия</span>',
+    '<span class="grad4">Гуманистическая</span>',
+    '<span class="grad5">Дифференциальная</span>',
+    '<span class="grad6">Клиент-центрированная</span>',
+    '<span class="grad7">Логотерапия</span>',
+    '<span class="grad8">Нейропсихология</span>',
+    '<span class="grad0">НЛП</span>',
+    '<span class="grad1">Онтописхология</span>',
+    '<span class="grad1">Позитивная</span>',
+    '<span class="grad2">Психоанализ</span>',
+    '<span class="grad3">Психодинамика</span>',
+    '<span class="grad4">Психодрама</span>',
+    '<span class="grad5">Психология спорта</span>',
+    '<span class="grad6">Психология труда</span>',
+    '<span class="grad7">Ребефинг</span>',
+    '<span class="grad8">Сексология</span>',
+    '<span class="grad1">Социальная</span>',
+    '<span class="grad2">Экзистенциальная</span>',
+    '<span class="grad3">Трансактный анализ</span>'
+  ],
+  typeSpeed: 50,
+  backSpeed: 30,
+  backDelay: 3000,
+  loop: true,
+})
+

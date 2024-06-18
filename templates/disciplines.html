@@ -1,0 +1,77 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дисциплины</title>
+    <link rel="stylesheet" href="{% static 'css/disciplines.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            background-color: rgb(241, 204, 91);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="https://vk.com/psyhologiaa" class="header-logo">
+          <img
+            class="header-logo-image"
+            src="{% static '/images/logo.png' %}"
+            alt="PSY"
+            width="40"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+
+    <script src="{% static '/scripts/nav.js' %}"></script>
+    <script>nav_main("disciplines");</script>
+
+        <div class="lang-contant parent-element">
+        </div>
+    </header>
+    <div class="container">
+        <p class="title">Направления психоанализа</p>
+        <div class="content">
+            <div class="discipline grad0">
+                <p class="type-discipline">НЛП направления:</p>
+                <div class="elements_discipline">
+                    <p class="element-discipline">Трёхсторонняя модель Пирса-Фреге</p>
+                <p class="element-discipline">Двусторонняя модель Фердинанда де Соссюра</p>
+                <p class="element-discipline">Концепция синтеза "интерпретативного" и "манипулятивного" психоанализа</p>
+                </div>
+
+            </div>
+            <div class="discipline grad1">
+                <p class="type-discipline">Нейропсихология:</p>
+                <div class="elements_discipline">
+                    <p class="element-discipline">Экспериментальная нейрофизиология</p>
+                <p class="element-discipline">Клиническая нейрофизиология</p>
+                <p class="element-discipline">Коннективизм</p>
+                </div>
+
+
+            </div>
+            <div class="discipline grad2">
+                <p class="type-discipline">Когнитивная психология:</p>
+                <div class="elements_discipline">
+                    <p class="element-discipline">Основные феномены зрительных ощущений</p>
+                <p class="element-discipline">Психофизика</p>
+                <p class="element-discipline">Восприятие объектов и сцен</p>
+                <p class="element-discipline">Восприятие пространства и движения, константность восприятия</p>
+                <p class="element-discipline">Предметность и установка в восприятии: роль субъективных факторов в формировании перцептивного образа</p>
+                <p class="element-discipline">Общее представление о внимании</p>
+                <p class="element-discipline">Избирательное (селективное) внимание</p>
+                <p class="element-discipline">Устойчивое и распределённое внимание</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

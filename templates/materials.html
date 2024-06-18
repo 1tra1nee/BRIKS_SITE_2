@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Материалы</title>
+    <link rel="stylesheet" href="{% static 'css/materials.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            background-color: rgb(241, 204, 91);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="https://mai.ru" class="header-logo">
+          <img
+            class="header-logo-image"
+            src="{% static '/images/logo.png' %}"
+            alt="PSY"
+            width="40"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+
+       <script src="{% static '/scripts/nav.js' %}"></script>
+      <script>nav_main("materials");</script>
+
+        <div class="lang-contant parent-element">
+        </div>
+    </header>
+    <p class="title-partner">Литература</p>
+    <div class="main_content">
+        <div class="element">
+            <div class="image_box">
+                <img src="{% static '/images/materials/3.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="element">
+            <div class="image_box">
+                <img src="{% static '/images/materials/4.jpeg' %}" alt="">
+            </div>
+        </div>
+        <div class="element">
+            <div class="image_box">
+                <img src="{% static '/images/materials/5.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="element">
+            <div class="image_box">
+                <img src="{% static '/images/materials/6.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="element">
+            <div class="image_box">
+                <img src="{% static '/images/materials/7.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="element">
+            <div class="image_box">
+                <img src="{% static '/images/materials/8.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="element">
+            <div class="image_box">
+                <img src="{% static '/images/materials/9.jfif' %}" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

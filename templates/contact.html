@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="{% static 'css/contacts.css' %}" />
+   <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            background-color: rgb(241, 204, 91);
+        }
+    </style>
+</head>
+<body>
+  <header class="header">
+    <a href="https://mai.ru" class="header-logo">
+      <img
+        class="header-logo-image"
+        src="{% static '/images/logo.png' %}"
+        alt="PSY"
+        width="40"
+        height="40"
+        loading="lazy"
+      />
+    </a>
+
+   <script src="{% static '/scripts/nav.js' %}"></script>
+   <script>nav_main("contacts");</script>
+
+
+    <div class="lang-contant parent-element">
+    </div>
+  </header>
+    <div class="container">
+        <p class="title">Контакты</p>
+        <div class="content">
+            <div class="discipline grad2">
+                <div class="elements_discipline">
+                 <p class="element-discipline">
+                  Психология и ее направления
+                  <a href="https://mai.ru" class="header-logo">
+                 <img class="header-logo-image" src="{% static '/images/logo.png' %}" alt="PSY" width="40" height="40" loading="lazy"/>
+                  </a>
+
+
+                 <p class="element-discipline">
+                  Email: psyhologiaa@mai.ru \ psyhologiaa@yandex.ru
+                 <p class="element-discipline">
+                  Телефон кафедры: +7(777)666-13-13
+                 <p class="element-discipline">
+                  Адрес: Психологическое шоссе, 77к13, Москва, 125310
+                 </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

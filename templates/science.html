@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История</title>
+    <link rel="stylesheet" href="{% static 'css/science.css' %}" />
+   <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            background-color: rgb(241, 204, 91); /* Бледно-зеленый фон */
+        }
+    </style>
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header-logo">
+      <img
+        class="header-logo-image"
+        src="{% static '/images/logo.png' %}"
+        alt="PSY"
+        width="40"
+        height="40"
+        loading="lazy"
+      />
+    </a>
+
+    <script src="{% static '/scripts/nav.js' %}"></script>
+   <script>nav_main("science");</script>
+
+
+    <div class="lang-contant parent-element">
+    </div>
+  </header>
+    <div class="container">
+        <p class="title">Наука</p>
+        <div class="content">
+            <div class="discipline grad1">
+                <div class="elements_discipline">
+                 <p class="element-discipline">Краткая история психологии: от Античности до наших дней. Краткая история психологии: от Античности до наших дней. Вы слышали о Зигмунде Фрейде? Наверняка да. Кто-то даже сможет щегольнуть цитатой знаменитого психоаналитика. Но ведь не единым Фрейдом жива психологическая наука! Она развивалась на протяжении многих веков и богата людьми, которые размышляли и делали выводы о природе души, разума, психики. Мы предлагаем вам расширить свой кругозор и познакомиться с идеями выдающихся мыслителей, а также узнать, как психология из умозрительной дисциплины превратилась в настоящую науку.
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
